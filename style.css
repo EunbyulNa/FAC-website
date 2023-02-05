@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 30px auto;
+  border-radius: 10px;
+  width: 95vw;
+  height: 90vh;
+  display: flex;
+}
+
+.menu {
+border-radius: 10px;
+  width: 20%;
+  background-color:#FAACA8;
+}
+
+.sideImg {
+text-align: center;
+padding: 40px 10px;
+}
+
+.sideImg img {
+
+  width: 50%;
+}
+
+.menu ul {
+  margin-left: 10px;
+}
+.menu ul li {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.active {
+  background-color:#DDD6F3;
+   border-radius: 30px 0 0 30px;
+}
+
+
+
+.top_curve {
+  border: 1px solid red;
+}
+.menu ul li a{
+  text-decoration: none;
+  font-size:30px;
+  color: #fff;
+}
+
+.main {
+  border-radius: 10px;
+  background-color: #DDD6F3;
+  width: 80%;
+}
