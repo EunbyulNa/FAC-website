@@ -3,12 +3,14 @@
   padding: 0;
 }
 
+body {
 
+
+}
 
 .container {
   box-shadow: 17px -7px 15px -7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
   border: 5px solid white;
-  background-color: #DDD6F3;
   margin: 30px auto;
   border-radius: 20px;
   width: 95vw;
@@ -17,28 +19,25 @@
 }
 
 .menu {
-
-border-radius: 15px;
+  border-radius: 15px 15px 15px 15px;
   width: 20%;
-  background-color: #E0C3FC;
-
+  background-color: #DDD6F3;
 }
 
 .sideImg {
-text-align: center;
-padding: 40px 10px;
+ text-align: center;
+ padding: 40px 10px;
 }
 
 .sideImg img {
-
   width: 50%;
 }
 
 .menu ul {
   margin-left: 10px;
 }
-.menu ul li {
 
+.menu ul li {
   list-style: none;
   text-align: center;
   margin: 10px 0;
@@ -46,34 +45,73 @@ padding: 40px 10px;
 }
 
 .active {
-  background-color:#DDD6F3;
-   border-radius: 30px 0 0 30px;
-
+  background-color:white;
+  border-radius: 30px 0 0 30px;
 }
-
-
 
 .menu ul li a{
+  font-family: 'Nunito', sans-serif;
   text-decoration: none;
   font-size:1.5em;
-  color: #fff;
+  color: #7c678c;
 }
-
-
 
 .main {
-  border-radius:0 20px 20px 0;
-
+  border-radius:0 13px 13px 0;
   width: 80%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
-.main-desc {
 
+
+.first {
+ border: 1px solid red;
+ margin-top: 200px;
+ transition: all 1s ease-in-out;
+ opacity: 0;
 }
 
-.main-desc h1 {
-  font-family: 'Nunito', sans-serif;
+
+.title-img {
+ position: relative;
+ width: 200px;
+ z-index: 3;
+ margin-top: 200px;
+ transition: all 1s ease-in-out;
+ opacity: 0;
+}
+
+.title-img img{
+  width: 100%;
+}
+
+.title-hi {
+  background-color: pink;
+  position: absolute;
+  top:-10px;
+  right:-20px;
+  transform: rotate(10deg);
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.title-hi p {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 17px;
+}
+
+.title-desc {
+  margin-top: 200px;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+.title-desc h1 {
+    font-family: 'Nunito', sans-serif;
 }
