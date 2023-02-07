@@ -19,6 +19,9 @@ body {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
   border-radius: 15px 15px 15px 15px;
   width: 20%;
   background-color: #DDD6F3;
@@ -30,7 +33,7 @@ body {
 }
 
 .sideImg img {
-  width: 50%;
+  width: 35%;
 }
 
 .menu ul {
@@ -57,6 +60,7 @@ body {
 }
 
 .main {
+  overflow: scroll;
   border-radius:0 13px 13px 0;
   width: 80%;
   display: flex;
@@ -68,15 +72,9 @@ body {
 
 
 
-.first {
- border: 1px solid red;
- margin-top: 200px;
- transition: all 1s ease-in-out;
- opacity: 0;
-}
-
 
 .title-img {
+
  position: relative;
  width: 200px;
  z-index: 3;
@@ -90,7 +88,7 @@ body {
 }
 
 .title-hi {
-  background-color: pink;
+  background-color: #eeaeca;
   position: absolute;
   top:-10px;
   right:-20px;
@@ -107,11 +105,30 @@ body {
 }
 
 .title-desc {
+
   margin-top: 200px;
   transition: all 1s ease-in-out;
   opacity: 0;
 }
 
 .title-desc h1 {
+
     font-family: 'Nunito', sans-serif;
+}
+
+.footer-icons {
+  margin-top: 90px;
+  text-align: center;
+}
+
+
+.footer-icons i {
+  padding: 10px;
+  color: #AE58FF;
+}
+
+.footer-icons p {
+  color: #404040;
+  font-size: 15px;
+  padding: 5px;
 }

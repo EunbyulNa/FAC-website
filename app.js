@@ -2,7 +2,6 @@ let menuItems = document.querySelectorAll("a");
 let length = menuItems.length;
 let currentLocation = location.href;
 
-let first = document.querySelector(".first");
 let titleImg = document.querySelector(".title-img");
 let titleDesc = document.querySelector(".title-desc");
 
