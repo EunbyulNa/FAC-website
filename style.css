@@ -119,14 +119,14 @@ cursor: pointer;
 }
 
 .wavy{
-
+  color: #22a4be;
 
 }
 
 .wavy:hover {
   -webkit-text-decoration: underline wavy #22a4be;
   text-decoration: underline wavy #22a4be;
-  color: #22a4be;
+
 }
 
 
@@ -142,6 +142,8 @@ cursor: pointer;
 }
 
 .footer-icons p {
+  font-family: 'Gloria Hallelujah', cursive;
+
   color: #404040;
   font-size: 15px;
   padding: 5px;
@@ -151,7 +153,8 @@ cursor: pointer;
 
 /*aboutme*/
 .aboutme-main {
-  overflow: scroll;
+  height: 90vh;
+overflow-y: scroll;
   border-radius:0 13px 13px 0;
     width:80%;
 
@@ -159,50 +162,69 @@ cursor: pointer;
 }
 
 
-.chat {
+.chat, .chatTwo, .chatThree, .chatFour, .chatFive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
+  border: 2px solid #FFF3F3;
+  background-color: #F9DFDF;
+  border-radius: 15px;
+opacity: 0;
   margin: 30px 0 20px 0;
   transition: all 1s ease-in-out;
-  opacity: 0;
+
 }
 
-.answer {
-  width: 650px;
+.answer, .answerTwo, .answerThree, .answerFour,
+.answerFive, .answerSix, .answerSeven, .answerEight, .answerNine{
   float: right;
-
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+   line-height:1.6;
+  border: 2px solid #E9F3FF;
+  background-color: #DEEDFF;
+  border-radius: 15px;
   padding: 10px;
   margin: 30px 0 20px;
   transition: all 1s ease-in-out;
   opacity: 0;
+
 }
 
-.chat::after {
-  content: "";
-  clear: both;
-  display: table;
+.chatTwo, .chatFive {
+  width: 500px;
 }
 
-.chat i {
+.chatThree, .chatFour{
+  width: 550px;
+}
+
+
+
+
+.chat img, .chatTwo img, .chatThree img, .chatFour img, .chatFive img {
+
+  width: 40px;
   padding: 10px;
-  float:left;
+
 }
 
-.answer i {
-  padding: 10px;
-  float:right;
-}
-
-.answer p {
+.answer img, .answerTwo img, .answerThree img, .answerFour img,
+.answerFive img, .answerSix img, .answerSeven img, .answerEight img, .answerNine img {
+  width: 50px;
   padding: 10px;
 }
 
-.chat p {
-  padding: 15px;
+.chat p, .chatTwo p, .chatThree p, .chatFour p, .chatFive p{
+  font-family: 'Hind', sans-serif;
+  padding: 10px;
+}
+
+.answer p, .answerTwo p, .answerThree p, .answerFour p,
+.answerFive p, .answerSix p, .answerSeven p, .answerEight p, .answerNine p {
+  font-family: 'Hind', sans-serif;
+  padding: 10px;
 }
