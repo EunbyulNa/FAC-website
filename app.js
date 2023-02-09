@@ -5,29 +5,23 @@ let currentLocation = location.href;
 let titleImg = document.querySelector(".title-img");
 let titleDesc = document.querySelector(".title-desc");
 
-let chat = document.querySelector(".chat");
-let chatTwo = document.querySelector(".chatTwo");
-let chatThree = document.querySelector(".chatThree");
-let chatFour = document.querySelector(".chatFour");
-let chatFive = document.querySelector(".chatFive");
+let leftOne = document.querySelector("#leftOne");
+let leftTwo = document.querySelector("#leftTwo");
+let leftThree = document.querySelector("#leftThree");
+let leftFour = document.querySelector("#leftFour");
+let leftFive = document.querySelector("#leftFive");
 
-let answer = document.querySelector(".answer");
-let answerTwo = document.querySelector(".answerTwo");
-let answerThree = document.querySelector(".answerThree");
-let answerFour = document.querySelector(".answerFour");
-let answerFive = document.querySelector(".answerFive");
-let answerSix = document.querySelector(".answerSix");
-let answerSeven = document.querySelector(".answerSeven");
-let answerEight = document.querySelector(".answerEight");
-let answerNine = document.querySelector(".answerNine");
-
+let rightOne = document.querySelector("#rightOne");
+let rightTwo = document.querySelectorAll("#rightTwo");
+let rightThree = document.querySelectorAll("#rightThree");
+let rightFour = document.querySelectorAll("#rightFour");
+let rightFive = document.querySelector("#rightFive");
 
 
 
 menuItems.forEach( (item) => {
   if(currentLocation === item.href) {
     item.parentElement.className = "active"
-    console.log(item.parentElement)
   };
 });
 
@@ -43,55 +37,78 @@ window.addEventListener("load", function () {
   }, 1300);
 });
 
-window.addEventListener("load", function() {
-  chat.style.marginLeft= "30px";
-  chat.style.opacity = '1';
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    leftOne.style.marginLeft = '30px';
+    leftOne.style.opacity = '1'
+  });
 });
 
 window.addEventListener("load", function () {
   setTimeout(function () {
-    answer.style.marginRight = "30px";
-    answer.style.opacity = '1'
+    rightOne.style.marginRight = '30px';
+    rightOne.style.opacity = '1'
   }, 1300);
 });
 
-
 window.addEventListener("load", function () {
   setTimeout(function () {
-    chatTwo.style.marginLeft = "30px";
-    chatTwo.style.opacity = '1'
-  }, 4000);
+    leftTwo.style.marginLeft = '30px';
+    leftTwo.style.opacity = '1'
+  }, 2900);
+});
+
+window.addEventListener("load", function () {
+  rightTwo.forEach( (div) => {
+    setTimeout(function () {
+      div.style.marginRight = '30px';
+      div.style.opacity = '1';
+    }, 4400)
+  })
 });
 
 window.addEventListener("load", function () {
   setTimeout(function () {
-    answerTwo.style.marginRight = "30px";
-    answerTwo.style.opacity = '1'
-    answerThree.style.marginRight = "30px";
-    answerThree.style.opacity = '1'
-    answerFour.style.marginRight = "30px";
-    answerFour.style.opacity = '1'
-  }, 5400);
+    leftThree.style.marginLeft = '30px';
+    leftThree.style.opacity = '1'
+  }, 6000);
+});
+
+window.addEventListener("load", function () {
+  rightThree.forEach( (div) => {
+    setTimeout(function () {
+      div.style.marginRight = '30px';
+      div.style.opacity = '1';
+    }, 6500)
+  })
 });
 
 window.addEventListener("load", function () {
   setTimeout(function () {
-    chatThree.style.marginLeft = "30px";
-    chatThree.style.opacity = '1';
-    answerFive.style.marginRight = "30px";
-    answerFive.style.opacity = '1';
-    answerSix.style.marginRight = "30px";
-    answerSix.style.opacity = '1';
-    chatFour.style.marginLeft = "30px";
-    chatFour.style.opacity = '1';
-    answerSeven.style.marginRight = "30px";
-    answerSeven.style.opacity = '1';
-    answerEight.style.marginRight = "30px";
-    answerEight.style.opacity = '1';
-    chatFive.style.marginLeft = "30px";
-    chatFive.style.opacity = '1';
-    answerNine.style.marginRight = "30px";
-    answerNine.style.opacity = '1';
+    leftFour.style.marginLeft = '30px';
+    leftFour.style.opacity = '1'
+  }, 7500);
+});
 
-  }, 6400);
+window.addEventListener("load", function () {
+  rightFour.forEach( (div) => {
+    setTimeout(function () {
+      div.style.marginRight = '30px';
+      div.style.opacity = '1';
+    }, 8000)
+  })
+});
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    leftFive.style.marginLeft = '30px';
+    leftFive.style.opacity = '1'
+  }, 8500);
+});
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    rightFive.style.marginRight = '30px';
+    rightFive.style.opacity = '1'
+  }, 9500);
 });
