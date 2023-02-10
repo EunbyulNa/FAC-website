@@ -17,7 +17,13 @@ let rightThree = document.querySelectorAll("#rightThree");
 let rightFour = document.querySelectorAll("#rightFour");
 let rightFive = document.querySelector("#rightFive");
 
+let folderImg= document.querySelector(".folder");
+let paper = document.querySelector(".paper");
 
+
+folderImg.addEventListener("mouseover", function () {
+  paper.classList.add("position");
+})
 
 menuItems.forEach( (item) => {
   if(currentLocation === item.href) {
@@ -63,8 +69,8 @@ window.addEventListener("load", function () {
     setTimeout(function () {
       div.style.marginRight = '30px';
       div.style.opacity = '1';
-    }, 4400)
-  })
+    }, 4400);
+  });
 });
 
 window.addEventListener("load", function () {
@@ -79,8 +85,8 @@ window.addEventListener("load", function () {
     setTimeout(function () {
       div.style.marginRight = '30px';
       div.style.opacity = '1';
-    }, 6500)
-  })
+    }, 6500);
+  });
 });
 
 window.addEventListener("load", function () {
@@ -95,8 +101,8 @@ window.addEventListener("load", function () {
     setTimeout(function () {
       div.style.marginRight = '30px';
       div.style.opacity = '1';
-    }, 8000)
-  })
+    }, 8000);
+  });
 });
 
 window.addEventListener("load", function () {
