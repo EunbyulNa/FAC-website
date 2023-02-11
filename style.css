@@ -227,44 +227,102 @@ width: 3rem;
 
 /*project*/
 .project-main {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   overflow-y: scroll;
   border-radius:0 13px 13px 0;
-  width:65%;
+  width:85%;
   height: 90vh;
   margin: 0 auto;
-  background-color: white;
 }
 
+.file-container{
 
-.folderImg {
+padding-left: 7rem;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-row-gap: 4rem;
+}
 
+.file {
   position: relative;
+
 }
 
-.paper {
-  opacity: 0;
+.folder {
+  width: 10rem;
+
+}
+
+.folder p {
+  margin-top: 10px;
+  text-align: center;
+}
+.folderback {
+  padding: 10px;
+  width: 9rem;
+
+}
+.folderfront {
+  z-index: 3;
+  width:9.2rem;
   position: absolute;
-  top:200px;
-  left:30px;
-  width:200px;
-  height: 150px;
+  top:35px;
+  left:10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+
+}
+.page{
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  top:20px;
+
+  left:20px;
+  width: 8rem;
+  height: 7rem;
+  border: 1px solid black;
   background-color: white;
-  border: 1px solid red;
-
-}
-
-.paper img {
-
-  width: 100%;
-}
-
-.position {
-  opacity: 1;
-  top: 100px;
+  	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
   transition: all 1s ease-in-out;
+}
+
+.page img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.project-icon {
+  position: relative;
+ padding-left:2rem;
+ padding-top: 2rem;
+  width: 9rem;
+  z-index: 3;
+}
+
+.project-icon img {
+
+
+width: 100%;
+}
+
+
+.title-project {
+  background-color: #eeaeca;
+  position: absolute;
+  top:60px;
+  left:-60px;
+  transform: rotate(-7deg);
+  padding: 0.5rem;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.title-project p {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1rem;
 }

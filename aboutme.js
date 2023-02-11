@@ -2,9 +2,6 @@ let menuItems = document.querySelectorAll("a");
 let length = menuItems.length;
 let currentLocation = location.href;
 
-let titleImg = document.querySelector(".title-img");
-let titleDesc = document.querySelector(".title-desc");
-
 let leftOne = document.querySelector("#leftOne");
 let leftTwo = document.querySelector("#leftTwo");
 let leftThree = document.querySelector("#leftThree");
@@ -17,30 +14,10 @@ let rightThree = document.querySelectorAll("#rightThree");
 let rightFour = document.querySelectorAll("#rightFour");
 let rightFive = document.querySelector("#rightFive");
 
-let folderImg= document.querySelector(".folder");
-let paper = document.querySelector(".paper");
-
-
-folderImg.addEventListener("mouseover", function () {
-  paper.classList.add("position");
-})
-
 menuItems.forEach( (item) => {
   if(currentLocation === item.href) {
     item.parentElement.className = "active"
   };
-});
-
-window.addEventListener("load", function() {
-  titleImg.style.marginTop = 0;
-  titleImg.style.opacity = '1';
-});
-
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    titleDesc.style.marginTop = 0;
-    titleDesc.style.opacity = '1'
-  }, 1300);
 });
 
 window.addEventListener("load", function () {
