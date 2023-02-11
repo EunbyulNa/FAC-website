@@ -14,43 +14,24 @@ menuItems.forEach( (item) => {
 folders.forEach( (folder) => {
   folder.addEventListener("mouseover", function () {
     folder.parentElement.nextElementSibling.style.top = "-60px"
-  })
-})
+  });
+});
 
 folders.forEach( (folder) => {
   folder.addEventListener("mouseout", function () {
     folder.parentElement.nextElementSibling.style.top = "20px"
-  })
-})
+  });
+});
 
 
 pages.forEach( (page) => {
   page.addEventListener("mouseover", function () {
     page.style.top = "-60px";
-  })
-})
+  });
+});
 
 pages.forEach( (page) => {
   page.addEventListener("mouseout", function () {
     page.style.top = "20px";
-  })
-})
-
-
-
-/*folder.addEventListener("mouseover", function () {
-  page.style.top = "-80px";
+  });
 });
-
-folder.addEventListener("mouseout", function () {
-  page.style.top = "20px";
-
-});
-
-page.addEventListener("mouseover", function () {
-  page.style.top = "-80px";
-});
-
-page.addEventListener("mouseout", function () {
-  page.style.top = "20px";
-});*/

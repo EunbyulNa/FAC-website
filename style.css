@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 .container {
   box-shadow: 17px -7px 15px -7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
   border: 5px solid #fff;
@@ -37,15 +36,65 @@
 }
 
 .menu ul li {
+  position: relative;
   list-style: none;
   text-align: center;
   margin: 0.5rem 0;
   padding: 1rem;
 }
 
-.active {
-  background-color:white;
-  border-radius: 30px 0 0 30px;
+.mene ul li a {
+  display: block;
+  padding: 15px;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.active{
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.active .top-curve {
+  position: absolute;
+  top:-20px;
+  left:0;
+  width: 100%;
+  height: 20px;
+  background-color: white;
+}
+
+.active .top-curve::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 20px;
+  border-bottom-right-radius: 25px;
+  background-color: #DDD6F3;
+}
+
+.active .bottom-curve::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 20px;
+  border-top-right-radius: 25px;
+  background-color: #DDD6F3;
+}
+
+.active .bottom-curve {
+  position: absolute;
+  bottom: -20px;
+  left:0;
+  width: 100%;
+  height: 20px;
+  background-color: white;
 }
 
 .menu ul li a{
@@ -53,7 +102,9 @@
   text-decoration: none;
   font-size:1.5rem;
   color: #7c678c;
+  font-weight: bold;
 }
+
 
 .main {
   overflow: scroll;
@@ -116,13 +167,11 @@
   text-decoration: underline wavy #22a4be;
 }
 
-
 .footer-icons {
   position: relative;
   margin-top: 3rem;
   text-align: center;
 }
-
 
 .footer-icons i {
   padding: 10px;
@@ -144,7 +193,6 @@
 
 
 /*aboutme*/
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -163,7 +211,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #F2F8FF;
 }
-
 
 .aboutme-main {
   position: relative;
@@ -205,7 +252,6 @@
   padding: 10px;
 }
 
-
 .right-msg{
   width: 40rem;
   padding: 10px;
@@ -219,7 +265,6 @@
   opacity: 0;
   transition: all 1s ease-in-out;
 }
-
 
 .right-msg img{
 width: 3rem;
@@ -239,32 +284,32 @@ width: 3rem;
 }
 
 .file-container{
-
-padding-left: 7rem;
-display: grid;
-grid-template-columns: auto auto auto;
-grid-row-gap: 4rem;
+ padding-left: 7rem;
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-row-gap: 4rem;
 }
 
 .file {
   position: relative;
-
 }
 
 .folder {
   width: 10rem;
-
 }
 
 .folder p {
   margin-top: 10px;
   text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
 }
+
 .folderback {
   padding: 10px;
   width: 9rem;
-
 }
+
 .folderfront {
   z-index: 3;
   width:9.2rem;
@@ -273,20 +318,19 @@ grid-row-gap: 4rem;
   left:10px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-
 }
+
 .page{
   cursor: pointer;
   border-radius: 10px;
   position: absolute;
   top:20px;
-
   left:20px;
   width: 8rem;
   height: 7rem;
   border: 1px solid black;
   background-color: white;
-  	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
   transition: all 1s ease-in-out;
 }
 
@@ -298,18 +342,15 @@ grid-row-gap: 4rem;
 
 .project-icon {
   position: relative;
- padding-left:2rem;
- padding-top: 2rem;
+  padding-left:2rem;
+  padding-top: 2rem;
   width: 9rem;
   z-index: 3;
 }
 
 .project-icon img {
-
-
-width: 100%;
+  width: 100%;
 }
-
 
 .title-project {
   background-color: #eeaeca;
