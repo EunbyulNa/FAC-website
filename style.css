@@ -3,10 +3,15 @@
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   box-shadow: 17px -7px 15px -7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
   border: 5px solid #fff;
-  margin: 2rem 2rem;
+  margin: 1.3rem 2rem;
   border-radius: 20px;
   min-width: 90vw;
   min-height: 90vh;
@@ -24,7 +29,7 @@
 
 .sideImg {
  text-align: center;
- padding: 4rem 1rem;
+ padding: 3rem 1rem;
 }
 
 .sideImg img {
@@ -39,13 +44,13 @@
   position: relative;
   list-style: none;
   text-align: center;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
   padding: 1rem;
 }
 
 .mene ul li a {
   display: block;
-  padding: 15px;
+  padding: 10px;
   font-size: 14px;
   color: white;
   margin-bottom: 5px;
@@ -276,7 +281,7 @@ width: 3rem;
   position: relative;
   overflow-y: scroll;
   border-radius:0 13px 13px 0;
-  width:85%;
+  width:80%;
   height: 90vh;
   margin: 0 auto;
 }
@@ -365,3 +370,117 @@ width: 3rem;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 1rem;
 }
+
+/*writing*/
+.writing-main{ 
+  width: 80%;
+}
+
+.writing-header{
+  margin-top: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.writing-img {
+  position: absolute;
+  top: -10px;
+  left:310px;
+  opacity: 0;
+  width: 50px;
+  margin-left: -310px;
+  transition: all 1s ease-in-out;
+}
+
+.writing-txt {
+  font-size: 13px;
+  position: relative;
+  border-radius: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  width: auto;
+  height: 70px;
+}
+
+
+.note-container {
+display: flex;
+flex-direction:column;
+justify-content: baseline;
+align-items: center;
+}
+
+
+.note {
+  margin-top: 30px;
+  -webkit-box-shadow: 8px 8px 0px 1px #7c678c;
+  box-shadow: 8px 8px 0px 1px #7c678c;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  border: 2px solid #7c678c;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.note:nth-of-type(2){
+  margin-top: 50px;
+}
+
+.note-top{
+  border-bottom: 2px solid black;
+  height: 25px;
+}
+
+.note-top span{
+  margin-top: 6px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+ 
+}
+
+.note-top span:nth-child(1){
+  background-color: #f95c58;
+  margin-left: 10px;
+}
+
+.note-top span:nth-child(2){
+  background-color: #d7cdcf;
+}
+
+.note-top span:nth-child(3){
+  background-color: #28c941;
+}
+
+
+.note-head {
+  padding: 10px;
+}
+
+.note-header:hover{
+  text-decoration: underline wavy #22a4be; 
+
+}
+.note-body {
+  padding: 10px;
+}
+
+.note-bottom {
+  padding: 10px;
+  text-align: right;
+}
+
+.readmore:hover .fa-hand-o-right {
+  transition: all 0.7s ease-in-out;
+  transform: translateX(20%);
+}
+
+
+
+
+
+
+
+
+
