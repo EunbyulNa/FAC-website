@@ -23,4 +23,9 @@ Using vanilla JavaScript, I've added a setTimeout function so that the chat bubb
 The project images are stored in folders. Hovering over the folder images will reveal the hidden images.<br>
 Clicking on the images will allow you to view the actual website.
 
+##### ✅ Writing
+One of my hobbies is writing down my ideas and sharing them with people.<br>
+I made a list of articles, and when you click on it, it will take you to my Medium page. :)
+
+
 
